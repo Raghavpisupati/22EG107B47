@@ -33,8 +33,8 @@ print(history.history)
 #accuracy,loss = model.evaluate(x_test,y_test)
 
 #visualization
-#plt.plot(history.history['accuracy'],color = 'blue', label = 'train_accuracy')
-#plt.plot(history.history['val_accuracy'],color = 'red',label='val_accuracy')
-#plt.legend()
-#plt.title('Epochs vs  Accuracy')
-#plt.show()
+plt.plot(history.history['accuracy'],color = 'blue', label = 'train_accuracy')
+plt.plot(history.history['val_accuracy'],color = 'red',label='val_accuracy')
+plt.legend()
+plt.title('Epochs vs  Accuracy')
+plt.show()
