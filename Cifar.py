@@ -27,6 +27,8 @@ print(type(history))
 print(history.history.keys())
 print(history.history)
 
+#o
+
 #evaluate
 #accuracy,loss = model.evaluate(x_test,y_test)
 
