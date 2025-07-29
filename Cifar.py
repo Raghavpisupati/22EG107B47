@@ -38,8 +38,15 @@ print(f'loss:{loss}')
 #model.fit(X_train,y_train,epochs=10,batch_size=64)
 
 #exp2
+#model.compile(optimizer='sgd',loss='categorical_crossentropy',metrics=['accuracy'])
+#model.fit(X_train,y_train,epochs=10,batch_size=64)
+
+#exp3
+model.add(Dense(256,activation='relu'))
+model.add(Dense(128,activation='softmax'))
 model.compile(optimizer='sgd',loss='categorical_crossentropy',metrics=['accuracy'])
 model.fit(X_train,y_train,epochs=10,batch_size=64)
+
 #Visualization
 #plt.plot(history.history['accuracy'],color = 'blue',label='train_accuracy')
 #plt.plot(history.history['val_accuracy'],color = 'red',label='val_accuracy')
