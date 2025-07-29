@@ -32,11 +32,14 @@ print(f'test_accuracy:{test_accuracy}')
 print(f'loss:{loss}')
 
 #Experiment 1
-model.add(Dense(128,activation='relu'))
-model.add(Dense(10,activation='softmax'))
-model.compile(optimizer='adam',loss='categorical_crossentropy',metrics=['accuracy'])
-model.fit(X_train,y_train,epochs=10,batch_size=64)
+#model.add(Dense(128,activation='relu'))
+#model.add(Dense(10,activation='softmax'))
+#model.compile(optimizer='adam',loss='categorical_crossentropy',metrics=['accuracy'])
+#model.fit(X_train,y_train,epochs=10,batch_size=64)
 
+#exp2
+model.compile(optimizer='sgd',loss='categorical_crossentropy',metrics=['accuracy'])
+model.fit(X_train,y_train,epochs=10,batch_size=64)
 #Visualization
 #plt.plot(history.history['accuracy'],color = 'blue',label='train_accuracy')
 #plt.plot(history.history['val_accuracy'],color = 'red',label='val_accuracy')
